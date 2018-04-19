@@ -1,0 +1,55 @@
+.custom-container-57{
+      @include flexDisplay();
+      .image-holder,
+      .content-holder{
+        width: 100%;
+        @media (min-width: 768px){
+          width: 50%;
+        }
+      }
+      .image-holder{
+        padding: 0 15px;
+        @media (min-width: 768px){
+          padding: 0 75px 0 0;
+        }
+        @media (min-width: 992px){
+          padding: 0 95px 0 0;
+        }
+        @media (min-width: 1200px){
+          padding: 0 110px 0 0;
+        }
+        .image-inner{
+          @include backgroundDefault();
+          min-height: 200px;
+          @media (min-width: 576px){
+            max-width: 540px;
+            margin: 0 auto;
+          }
+          @media (min-width: 768px){
+            max-width: 100%;
+          }
+        }
+      }
+      .content-holder{
+        .content-inner{
+          background-color: #f0f0f0;
+          padding: 0 15px;
+          @media (min-width: 576px){
+            max-width: 540px;
+            margin: 0 auto;
+          }
+          @media (min-width: 768px){
+            margin-left: -60px;
+            max-width: 420px;
+          }
+          @media (min-width: 992px){
+            margin-left: -80px;
+            max-width: 560px;
+          }
+          @media (min-width: 1200px){
+            margin-left: -95px;
+            max-width: 665px;
+          }
+        }
+      }
+    }
