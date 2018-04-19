@@ -1,5 +1,6 @@
 .custom-container-57{
-  @include flexDisplay();
+  display: flex;
+  flex-wrap: wrap;
   .image-holder,
   .content-holder{
     width: 100%;
@@ -19,7 +20,9 @@
       padding: 0 110px 0 0;
     }
     .image-inner{
-      @include backgroundDefault();
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
       min-height: 200px;
       @media (min-width: 576px){
         max-width: 540px;
